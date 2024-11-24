@@ -8,19 +8,22 @@ CavemanCoding е отбор от ученици събрали се заедно
 
 Програмиране:
 
-![image](https://github.com/user-attachments/assets/3c37b5c9-7fc5-485e-a75f-f1384d75e6be)
+![image](https://github.com/user-attachments/assets/34a9d4eb-3bdb-4118-8700-af34f4ceb294)
 
-![image](https://github.com/user-attachments/assets/4499715a-86cc-4085-838b-63ea4beb0fb2)
+![image](https://github.com/user-attachments/assets/edf0ceac-ef59-4591-bf3f-dfb81de3e4a0)
 
 
 
 Дизайн:
 
-![image](https://github.com/user-attachments/assets/eea0357e-31e4-4e82-b0c8-7d11249dbf17)
+![image](https://github.com/user-attachments/assets/e2075707-8b88-4512-b55a-1e34520009c7)
+
 
 Комуникация:
 
-   ![image](https://github.com/user-attachments/assets/b20aa2ee-b270-45d5-9ade-21eda4f774a2)
+![image](https://github.com/user-attachments/assets/20d9a2f5-c895-40b7-9249-3abb54635b1a)
+
+
    
 
    ![image](https://github.com/user-attachments/assets/06abdcf1-c410-4c07-a9bf-988d4c2e5c74)
