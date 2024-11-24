@@ -1,4 +1,7 @@
 # Sprint-9th-grade-Math-Games
+
+ ![image](https://github.com/user-attachments/assets/dde4ae5d-6e52-4484-8609-6a4c849e3eea)
+
 CavemanCoding е отбор от ученици събрали се заедно да направят проект с игри като Sudoku и Wordle.
 Нашата цел е да направим забавни игри за раздвижване на мозъка.
 Ето и какво използвахме:
@@ -17,15 +20,19 @@ CavemanCoding е отбор от ученици събрали се заедно
 
 Комуникация:
 
-![image](https://github.com/user-attachments/assets/756e8204-be8a-42e9-9f59-46275c261694)
+   ![image](https://github.com/user-attachments/assets/b20aa2ee-b270-45d5-9ade-21eda4f774a2)
+   
 
-![image](https://github.com/user-attachments/assets/fed47a95-ca2f-403d-b709-94e8bb84ba97)
+   ![image](https://github.com/user-attachments/assets/06abdcf1-c410-4c07-a9bf-988d4c2e5c74)
+
 
 
 Документация:
 
-![image](https://github.com/user-attachments/assets/9e0a4619-c2d6-4a3b-af23-8674f6d2d818)
-![image](https://github.com/user-attachments/assets/1cb98cb5-7d2d-477b-b28d-96917f428239)
+   ![image](https://github.com/user-attachments/assets/24de8d9a-d6af-48a8-9280-3b8ef6b63abb)
+   
+
+   ![image](https://github.com/user-attachments/assets/5e65b9e3-ae30-4e8e-be22-fb15fa897746)
 
 
 
