@@ -16,7 +16,8 @@ CavemanCoding е отбор от ученици събрали се заедно
 
 Дизайн:
 
-![image](https://github.com/user-attachments/assets/e2075707-8b88-4512-b55a-1e34520009c7)
+![image](https://github.com/user-attachments/assets/2b523587-44df-4d3b-9fa7-2990ef5625ce)
+
 
 
 Комуникация:
