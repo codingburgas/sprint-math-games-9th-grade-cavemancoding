@@ -67,24 +67,50 @@ string arr[1509] = { "aback", "abase", "abate", "abbey", "abbot", "abhor", "abid
 
 
 
-		if (word[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+
+        if (word[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+		else if (word[0] == arr[RN][1] || word[0] == arr[RN][2] || word[0] == arr[RN][3] || word[0] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+		else{ SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
 		cout << word[0];
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
 		if (word[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+		else if (word[1] == arr[RN][0] || word[1]== arr[RN][2] || word[1] ==arr[RN][3] || word[1]== arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
 		cout << word[1];
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
 		if (word[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+		else if (word[2] == arr[RN][1] || word[2] == arr[RN][0] || word[2] == arr[RN][3] || word[2] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
 		cout << word[2];
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
 		if (word[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+		else if (word[3] == arr[RN][1] || word[3] == arr[RN][2] || word[3] == arr[RN][0] || word[3] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
 		cout << word[3];
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
 		if (word[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+		else if (word[4] == arr[RN][1] || word[4] == arr[RN][2]|| word[4] == arr[RN][3]|| word[4] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
 		cout << word[4];
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
 
+		
 
+
+
+
+
+
+		//else if (word[0]==arr[RN][1]|| arr[RN][2] || arr[RN][3] || arr[RN][4]){}
 
 
 
