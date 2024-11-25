@@ -2,8 +2,7 @@
 #include <iostream>
 #include <string>
 #include <windows.h>
-#include <stdio.h>
- 
+
 using namespace std;
 
 
@@ -17,7 +16,7 @@ int RN = dist6(rng);
 
 
 
-void welcome() {
+void welcomeTXT() {
 
 
 	cout << " _         _      ______      _             _____        _____         _     _       ______        " << endl;
@@ -29,484 +28,427 @@ void welcome() {
 	cout << endl;
 	cout << endl;
 }
+void wordleTXT() {
 
-void logics(string word) {
+	system("cls");
+	cout << "=================================================================" << endl;
+	cout << "|                                                               |" << endl;
+	cout << "|   $$\\      $$\\                           $$\\ $$\\              |" << endl;
+	cout << "|   $$ | $\\  $$ |                          $$ |$$ |             |" << endl;
+	cout << "|   $$ |$$$\\ $$ | $$$$$$\\   $$$$$$\\   $$$$$$$ |$$ | $$$$$$\\     |" << endl;
+	cout << "|   $$ $$ $$\\$$ |$$  __$$\\ $$  __$$\\ $$  __$$ |$$ |$$  __$$\\    |" << endl;
+	cout << "|   $$$$  _$$$$ |$$ /  $$ |$$ |  \\__|$$ /  $$ |$$ |$$$$$$$$ |   |" << endl;
+	cout << "|   $$$  / \\$$$ |$$ |  $$ |$$ |      $$ |  $$ |$$ |$$   ____|   |" << endl;
+	cout << "|   $$  /   \\$$ |\\$$$$$$  |$$ |      \\$$$$$$$ |$$ |\\$$$$$$$\\    |" << endl;
+	cout << "|   \\__/     \\__| \\______/ \\__|       \\_______|\\__| \\_______|   |" << endl;
+	cout << "|                                                               |" << endl;
+	cout << "=================================================================" << endl;
+
+
+
+}
+
+
+void wordle() {
+	
 
 	 //word[0] used to see the letter individually acsesing the index
 
-	if (word[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-	cout << word[0];
+	cout << "Guess The Word\n";
+
+	string word1, word2, word3, word4, word5, word6;
+	cin >> word1;
+
+
+
+
+	if (word1[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word1[0];
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-	if (word[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-	cout << word[1];
+	if (word1[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word1[1];
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-	if (word[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-	cout << word[2];
+	if (word1[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word1[2];
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-	if (word[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-	cout << word[3];
+	if (word1[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word1[3];
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-	if (word[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-	cout << word[4];
+	if (word1[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word1[4];
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
-	cout << word << "\033[2K"; // delete the line
+	cout << word1 << "\033[2K"; // delete the line
 	cout << "\033[F" << "\033[K";    // Move cursor up one line
 
 
 
 
 
-	if (word[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-	else if (word[0] == arr[RN][1] || word[0] == arr[RN][2] || word[0] == arr[RN][3] || word[0] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	if (word1[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word1[0] == arr[RN][1] || word1[0] == arr[RN][2] || word1[0] == arr[RN][3] || word1[0] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
 	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-	cout << word[0];
+	cout << word1[0];
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
 
-	if (word[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-	else if (word[1] == arr[RN][0] || word[1] == arr[RN][2] || word[1] == arr[RN][3] || word[1] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	if (word1[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word1[1] == arr[RN][0] || word1[1] == arr[RN][2] || word1[1] == arr[RN][3] || word1[1] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
 	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-	cout << word[1];
+	cout << word1[1];
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
 
-	if (word[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-	else if (word[2] == arr[RN][1] || word[2] == arr[RN][0] || word[2] == arr[RN][3] || word[2] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	if (word1[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word1[2] == arr[RN][1] || word1[2] == arr[RN][0] || word1[2] == arr[RN][3] || word1[2] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
 	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-	cout << word[2];
+	cout << word1[2];
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
 
-	if (word[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-	else if (word[3] == arr[RN][1] || word[3] == arr[RN][2] || word[3] == arr[RN][0] || word[3] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	if (word1[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word1[3] == arr[RN][1] || word1[3] == arr[RN][2] || word1[3] == arr[RN][0] || word1[3] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
 	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-	cout << word[3];
+	cout << word1[3];
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
 
-	if (word[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-	else if (word[4] == arr[RN][1] || word[4] == arr[RN][2] || word[4] == arr[RN][3] || word[4] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	if (word1[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word1[4] == arr[RN][1] || word1[4] == arr[RN][2] || word1[4] == arr[RN][3] || word1[4] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
 	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-	cout << word[4];
+	cout << word1[4] << endl;
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
+
+	cin >> word2;
+
+
+
+	if (word2[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word2[0];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word2[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word2[1];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word2[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word2[2];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word2[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word2[3];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word2[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word2[4];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+	cout << word2 << "\033[2K"; // delete the line
+	cout << "\033[F" << "\033[K";    // Move cursor up one line
+
+
+
+
+
+	if (word2[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word2[0] == arr[RN][1] || word2[0] == arr[RN][2] || word2[0] == arr[RN][3] || word2[0] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word2[0];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word2[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word2[1] == arr[RN][0] || word2[1] == arr[RN][2] || word2[1] == arr[RN][3] || word2[1] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word2[1];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word2[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word2[2] == arr[RN][1] || word2[2] == arr[RN][0] || word2[2] == arr[RN][3] || word2[2] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word2[2];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word2[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word2[3] == arr[RN][1] || word2[3] == arr[RN][2] || word2[3] == arr[RN][0] || word2[3] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word2[3];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word2[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word2[4] == arr[RN][1] || word2[4] == arr[RN][2] || word2[4] == arr[RN][3] || word2[4] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word2[4] << endl;
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	cin >> word3;
+
+
+
+	if (word3[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word3[0];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word3[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word3[1];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word3[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word3[2];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word3[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word3[3];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word3[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word3[4];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+	cout << word3 << "\033[2K"; // delete the line
+	cout << "\033[F" << "\033[K";    // Move cursor up one line
+
+
+
+
+
+	if (word3[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word3[0] == arr[RN][1] || word3[0] == arr[RN][2] || word3[0] == arr[RN][3] || word3[0] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word3[0];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word3[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word3[1] == arr[RN][0] || word3[1] == arr[RN][2] || word3[1] == arr[RN][3] || word3[1] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word3[1];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word3[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word3[2] == arr[RN][1] || word3[2] == arr[RN][0] || word3[2] == arr[RN][3] || word3[2] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word3[2];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word3[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word3[3] == arr[RN][1] || word3[3] == arr[RN][2] || word3[3] == arr[RN][0] || word3[3] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word3[3];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word3[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word3[4] == arr[RN][1] || word3[4] == arr[RN][2] || word3[4] == arr[RN][3] || word3[4] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word3[4] << endl;
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+
+	cin >> word4;
+
+
+	if (word4[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word4[0];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word4[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word4[1];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word4[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word4[2];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word4[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word4[3];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word4[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word4[4];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+	cout << word4 << "\033[2K"; // delete the line
+	cout << "\033[F" << "\033[K";    // Move cursor up one line
+
+
+
+
+
+	if (word4[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word4[0] == arr[RN][1] || word4[0] == arr[RN][2] || word4[0] == arr[RN][3] || word4[0] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word4[0];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word4[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word4[1] == arr[RN][0] || word4[1] == arr[RN][2] || word4[1] == arr[RN][3] || word4[1] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word4[1];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word4[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word4[2] == arr[RN][1] || word4[2] == arr[RN][0] || word4[2] == arr[RN][3] || word4[2] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word4[2];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word4[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word4[3] == arr[RN][1] || word4[3] == arr[RN][2] || word4[3] == arr[RN][0] || word4[3] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word4[3];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word4[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word4[4] == arr[RN][1] || word4[4] == arr[RN][2] || word4[4] == arr[RN][3] || word4[4] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word4[4] << endl;
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+
+	cin >> word5;
+
+
+	if (word5[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word5[0];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word5[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word5[1];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word5[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word5[2];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word5[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word5[3];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word5[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word5[4];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+	cout << word5 << "\033[2K"; // delete the line
+	cout << "\033[F" << "\033[K";    // Move cursor up one line
+
+
+
+
+
+	if (word5[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word5[0] == arr[RN][1] || word5[0] == arr[RN][2] || word5[0] == arr[RN][3] || word5[0] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word5[0];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word5[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word5[1] == arr[RN][0] || word5[1] == arr[RN][2] || word5[1] == arr[RN][3] || word5[1] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word5[1];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word5[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word5[2] == arr[RN][1] || word5[2] == arr[RN][0] || word5[2] == arr[RN][3] || word5[2] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word5[2];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word5[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word5[3] == arr[RN][1] || word5[3] == arr[RN][2] || word5[3] == arr[RN][0] || word5[3] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word5[3];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word5[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word5[4] == arr[RN][1] || word5[4] == arr[RN][2] || word5[4] == arr[RN][3] || word5[4] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word5[4] << endl;
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+
+
+	cin >> word6;
+
+
+	if (word6[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word6[0];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word6[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word6[1];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word6[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word6[2];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word6[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word6[3];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	if (word6[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	cout << word6[4];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+	cout << word6 << "\033[2K"; // delete the line
+	cout << "\033[F" << "\033[K";    // Move cursor up one line
+
+
+
+
+
+	if (word6[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word6[0] == arr[RN][1] || word6[0] == arr[RN][2] || word6[0] == arr[RN][3] || word6[0] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word6[0];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word6[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word6[1] == arr[RN][0] || word6[1] == arr[RN][2] || word6[1] == arr[RN][3] || word6[1] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word6[1];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word6[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word6[2] == arr[RN][1] || word6[2] == arr[RN][0] || word6[2] == arr[RN][3] || word6[2] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word6[2];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word6[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word6[3] == arr[RN][1] || word6[3] == arr[RN][2] || word6[3] == arr[RN][0] || word6[3] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word6[3];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+
+	if (word6[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
+	else if (word6[4] == arr[RN][1] || word6[4] == arr[RN][2] || word6[4] == arr[RN][3] || word6[4] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
+	else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
+	cout << word6[4] << endl;
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+	if (arr[RN] == word6) { cout << "Congratulations You Won\n"; }else { cout << "Oupssie, You Lost :(\n"; }
+
+	cout << "The word was ";
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 5);
+	cout << arr[RN];
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
 }
-
-
-
-
-
 
 
 
 	int main() {
 
 	
-		cout << "Guess The Word\n";
-
-		string word1, word2, word3, word4, word5, word6;
-		cin >> word1;
-
-	
-
-
-
-
-		if (word1[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word1[0];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word1[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word1[1];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word1[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word1[2];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word1[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word1[3];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word1[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word1[4];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-		cout << word1 << "\033[2K"; // delete the line
-		cout << "\033[F" << "\033[K";    // Move cursor up one line
-
-
-
-
-
-		if (word1[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word1[0] == arr[RN][1] || word1[0] == arr[RN][2] || word1[0] == arr[RN][3] || word1[0] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word1[0];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word1[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word1[1] == arr[RN][0] || word1[1] == arr[RN][2] || word1[1] == arr[RN][3] || word1[1] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word1[1];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word1[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word1[2] == arr[RN][1] || word1[2] == arr[RN][0] || word1[2] == arr[RN][3] || word1[2] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word1[2];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word1[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word1[3] == arr[RN][1] || word1[3] == arr[RN][2] || word1[3] == arr[RN][0] || word1[3] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word1[3];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word1[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word1[4] == arr[RN][1] || word1[4] == arr[RN][2] || word1[4] == arr[RN][3] || word1[4] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word1[4]<<endl;
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		cin >> word2;
-
-
-
-		if (word2[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word2[0];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word2[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word2[1];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word2[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word2[2];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word2[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word2[3];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word2[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word2[4];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-		cout << word2 << "\033[2K"; // delete the line
-		cout << "\033[F" << "\033[K";    // Move cursor up one line
-
-
-
-
-
-		if (word2[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word2[0] == arr[RN][1] || word2[0] == arr[RN][2] || word2[0] == arr[RN][3] || word2[0] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word2[0];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word2[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word2[1] == arr[RN][0] || word2[1] == arr[RN][2] || word2[1] == arr[RN][3] || word2[1] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word2[1];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word2[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word2[2] == arr[RN][1] || word2[2] == arr[RN][0] || word2[2] == arr[RN][3] || word2[2] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word2[2];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word2[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word2[3] == arr[RN][1] || word2[3] == arr[RN][2] || word2[3] == arr[RN][0] || word2[3] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word2[3];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word2[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word2[4] == arr[RN][1] || word2[4] == arr[RN][2] || word2[4] == arr[RN][3] || word2[4] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word2[4]<<endl;
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		cin>>word3;
-
-
-
-		if (word3[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word3[0];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word3[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word3[1];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word3[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word3[2];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word3[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word3[3];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word3[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word3[4];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-		cout << word3 << "\033[2K"; // delete the line
-		cout << "\033[F" << "\033[K";    // Move cursor up one line
-
-
-
-
-
-		if (word3[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word3[0] == arr[RN][1] || word3[0] == arr[RN][2] || word3[0] == arr[RN][3] || word3[0] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word3[0];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word3[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word3[1] == arr[RN][0] || word3[1] == arr[RN][2] || word3[1] == arr[RN][3] || word3[1] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word3[1];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word3[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word3[2] == arr[RN][1] || word3[2] == arr[RN][0] || word3[2] == arr[RN][3] || word3[2] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word3[2];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word3[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word3[3] == arr[RN][1] || word3[3] == arr[RN][2] || word3[3] == arr[RN][0] || word3[3] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word3[3];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word3[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word3[4] == arr[RN][1] || word3[4] == arr[RN][2] || word3[4] == arr[RN][3] || word3[4] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word3[4]<<endl;
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-
-		cin >> word4;
-
-
-		if (word4[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word4[0];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word4[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word4[1];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word4[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word4[2];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word4[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word4[3];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word4[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word4[4];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-		cout << word4 << "\033[2K"; // delete the line
-		cout << "\033[F" << "\033[K";    // Move cursor up one line
-
-
-
-
-
-		if (word4[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word4[0] == arr[RN][1] || word4[0] == arr[RN][2] || word4[0] == arr[RN][3] || word4[0] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word4[0];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word4[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word4[1] == arr[RN][0] || word4[1] == arr[RN][2] || word4[1] == arr[RN][3] || word4[1] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word4[1];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word4[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word4[2] == arr[RN][1] || word4[2] == arr[RN][0] || word4[2] == arr[RN][3] || word4[2] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word4[2];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word4[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word4[3] == arr[RN][1] || word4[3] == arr[RN][2] || word4[3] == arr[RN][0] || word4[3] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word4[3];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word4[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word4[4] == arr[RN][1] || word4[4] == arr[RN][2] || word4[4] == arr[RN][3] || word4[4] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word4[4]<<endl;
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-
-		cin >> word5;
-
-
-		if (word5[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word5[0];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word5[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word5[1];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word5[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word5[2];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word5[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word5[3];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word5[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word5[4];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-		cout << word5 << "\033[2K"; // delete the line
-		cout << "\033[F" << "\033[K";    // Move cursor up one line
-
-
-
-
-
-		if (word5[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word5[0] == arr[RN][1] || word5[0] == arr[RN][2] || word5[0] == arr[RN][3] || word5[0] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word5[0];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word5[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word5[1] == arr[RN][0] || word5[1] == arr[RN][2] || word5[1] == arr[RN][3] || word5[1] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word5[1];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word5[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word5[2] == arr[RN][1] || word5[2] == arr[RN][0] || word5[2] == arr[RN][3] || word5[2] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word5[2];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word5[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word5[3] == arr[RN][1] || word5[3] == arr[RN][2] || word5[3] == arr[RN][0] || word5[3] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word5[3];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word5[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word5[4] == arr[RN][1] || word5[4] == arr[RN][2] || word5[4] == arr[RN][3] || word5[4] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word5[4]<<endl;
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-
-
-		cin >> word6;
-
-
-		if (word6[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word6[0];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word6[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word6[1];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word6[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word6[2];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word6[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word6[3];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		if (word6[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		cout << word6[4];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-		cout << word6 << "\033[2K"; // delete the line
-		cout << "\033[F" << "\033[K";    // Move cursor up one line
-
-
-
-
-
-		if (word6[0] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word6[0] == arr[RN][1] || word6[0] == arr[RN][2] || word6[0] == arr[RN][3] || word6[0] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word6[0];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word6[1] == arr[RN][1]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word6[1] == arr[RN][0] || word6[1] == arr[RN][2] || word6[1] == arr[RN][3] || word6[1] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word6[1];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word6[2] == arr[RN][2]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word6[2] == arr[RN][1] || word6[2] == arr[RN][0] || word6[2] == arr[RN][3] || word6[2] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word6[2];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word6[3] == arr[RN][3]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word6[3] == arr[RN][1] || word6[3] == arr[RN][2] || word6[3] == arr[RN][0] || word6[3] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word6[3];
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		if (word6[4] == arr[RN][4]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); }
-		else if (word6[4] == arr[RN][1] || word6[4] == arr[RN][2] || word6[4] == arr[RN][3] || word6[4] == arr[RN][0]) { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6); }
-		else { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7); }
-		cout << word6[4]<<endl;
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-
-
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 		
-		/*
+		
 		string Menu[3] = { "Start Game", "Options", "Exit" };
 		int pointer = 0;
 
@@ -515,7 +457,7 @@ void logics(string word) {
 			system("cls");
 
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
-			welcome();
+			welcomeTXT();
 
 			for (int i = 0; i < 3; ++i)
 			{
@@ -557,7 +499,8 @@ void logics(string word) {
 					{
 					case 0:
 					{
-						cout << "\n\n\nStarting new game...";
+						wordleTXT();
+						wordle();
 						Sleep(1000);
 					} break;
 					case 1:
@@ -577,5 +520,5 @@ void logics(string word) {
 			Sleep(100);
 		}
 
-		return 0;*/
+		return 0;
 	}
