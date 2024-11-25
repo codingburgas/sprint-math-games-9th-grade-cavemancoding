@@ -450,7 +450,7 @@ void wordle() {
 
 		
 		
-		string Menu[3] = { "Start Game", "Rules", "Exit" };
+		string Menu[4] = { "Start Game", "Rules", "Tips" , "About Us"};
 		int pointer = 0;
 
 		while (true)
@@ -460,7 +460,7 @@ void wordle() {
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
 			welcomeTXT();
 
-			for (int i = 0; i < 3; ++i)
+			for (int i = 0; i < 4; ++i)
 			{
 				if (i == pointer)
 				{
@@ -488,7 +488,7 @@ void wordle() {
 				else if (GetAsyncKeyState(VK_DOWN) != 0)
 				{
 					pointer += 1;
-					if (pointer == 3)
+					if (pointer == 4)
 					{
 						pointer = 0;
 					}
@@ -511,8 +511,23 @@ void wordle() {
 					} break;
 					case 2:
 					{
-						return 0;
+						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 1);
+						cout << "1. Start with a Strong Word";
+						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
+						cout << "2. Use Feedback Wisely";
+						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 3);
+						cout << "3. Diversify in the Second Guess";
+						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+						cout << "4. Pay Attention to Patterns";
+						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6);
+						cout << "5. Be Strategic with Rare Letters";
+						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 9);
+						cout << "6. Use Process of Elimination";
+						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 					} break;
+
+				
+
 					}
 					break;
 				}
