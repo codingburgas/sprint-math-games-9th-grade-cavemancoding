@@ -8,7 +8,7 @@ CavemanCoding е отбор от ученици събрали се заедно
 Нашата цел е да направим забавни игри за раздвижване на мозъка.
 Ето и какво използвахме:
 
-Програмиране:
+### Програмиране:
 
 ![image](https://github.com/user-attachments/assets/34a9d4eb-3bdb-4118-8700-af34f4ceb294)
 
@@ -16,13 +16,13 @@ CavemanCoding е отбор от ученици събрали се заедно
 
 
 
-Дизайн:
+### Дизайн:
 
 ![image](https://github.com/user-attachments/assets/2b523587-44df-4d3b-9fa7-2990ef5625ce)
 
 
-
-Комуникация:
+ 
+### Комуникация:
 
 ![image](https://github.com/user-attachments/assets/20d9a2f5-c895-40b7-9249-3abb54635b1a)
 
@@ -33,7 +33,7 @@ CavemanCoding е отбор от ученици събрали се заедно
 
 
 
-Документация:
+### Документация:
 
    ![image](https://github.com/user-attachments/assets/24de8d9a-d6af-48a8-9280-3b8ef6b63abb)
    
@@ -42,9 +42,9 @@ CavemanCoding е отбор от ученици събрали се заедно
 
 
 
+# Документация: https://codingburgas-my.sharepoint.com/:w:/g/personal/vnpetkov23_codingburgas_bg/EVs1dexF2m5IgbdD7cEi8cUBYRcrtc-ScCJFXfPxJ73IHg?e=DVRMaK
 
-
-
+# Презентазия: https://codingburgas-my.sharepoint.com/:p:/g/personal/vnpetkov23_codingburgas_bg/ETqroEYmHjlGgT-jntRnmwQBTND8gj2t7x-vYjTtuRL0XA?e=L83EU6
 
 
  
