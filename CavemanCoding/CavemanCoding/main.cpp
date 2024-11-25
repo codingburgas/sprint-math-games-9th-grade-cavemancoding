@@ -31,6 +31,7 @@ void welcomeTXT() {
 void wordleTXT() {
 
 	system("cls");
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 11);
 	cout << "=================================================================" << endl;
 	cout << "|                                                               |" << endl;
 	cout << "|   $$\\      $$\\                           $$\\ $$\\              |" << endl;
@@ -44,7 +45,7 @@ void wordleTXT() {
 	cout << "|                                                               |" << endl;
 	cout << "=================================================================" << endl;
 
-
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
 }
 
@@ -449,7 +450,7 @@ void wordle() {
 
 		
 		
-		string Menu[3] = { "Start Game", "Options", "Exit" };
+		string Menu[3] = { "Start Game", "Rules", "Exit" };
 		int pointer = 0;
 
 		while (true)
@@ -505,8 +506,8 @@ void wordle() {
 					} break;
 					case 1:
 					{
-						cout << "\n\n\nThis is the options...";
-						Sleep(1000);
+						cout << "five-letter word is chosen which players aim to guess within six tries.\n After every guess, each letter is marked as either green, yellow or gray:\ngreen indicates that the letter is correct and in the correct position,\n yellow meansit is in the answer but not in the right position, while gray indicates it is not \nin the answer at all.[ Multiple instances of the same letter in a guess, such as \nthe (o) is in (robot), will be colored green or yellow only if the letter also appears\nmultiple times in the answer; otherwise, excess repeating letters will be colored gray\n";
+						Sleep(5000);
 					} break;
 					case 2:
 					{
