@@ -120,7 +120,7 @@ void wordle() {
 	cout << word1[4] << endl;
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
-
+	cout << "1";
 	cin >> word2;
 
 
@@ -450,7 +450,7 @@ void wordle() {
 
 		
 		
-		string Menu[4] = { "Start Game", "Rules", "Tips" , "About Us"};
+		string Menu[3] = { "Start Game", "Rules", "Tips" };
 		int pointer = 0;
 
 		while (true)
@@ -460,7 +460,7 @@ void wordle() {
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
 			welcomeTXT();
 
-			for (int i = 0; i < 4; ++i)
+			for (int i = 0; i < 3; ++i)
 			{
 				if (i == pointer)
 				{
@@ -488,7 +488,7 @@ void wordle() {
 				else if (GetAsyncKeyState(VK_DOWN) != 0)
 				{
 					pointer += 1;
-					if (pointer == 4)
+					if (pointer == 3)
 					{
 						pointer = 0;
 					}
@@ -502,7 +502,7 @@ void wordle() {
 					{
 						wordleTXT();
 						wordle();
-						Sleep(1000);
+						Sleep(10000);
 					} break;
 					case 1:
 					{
@@ -512,18 +512,19 @@ void wordle() {
 					case 2:
 					{
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 1);
-						cout << "1. Start with a Strong Word";
+						cout << "1. Start with a Strong Word\n";
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
-						cout << "2. Use Feedback Wisely";
+						cout << "2. Use Feedback Wisely\n";
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 3);
-						cout << "3. Diversify in the Second Guess";
+						cout << "3. Diversify in the Second Guess\n";
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
-						cout << "4. Pay Attention to Patterns";
+						cout << "4. Pay Attention to Patterns\n";
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6);
-						cout << "5. Be Strategic with Rare Letters";
+						cout << "5. Be Strategic with Rare Letters\n";
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 9);
-						cout << "6. Use Process of Elimination";
+						cout << "6. Use Process of Elimination\n";
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+						Sleep(5000);
 					} break;
 
 				
@@ -536,5 +537,5 @@ void wordle() {
 			Sleep(100);
 		}
 
-		return 0;
+		
 	}
