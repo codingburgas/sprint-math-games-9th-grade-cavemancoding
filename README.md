@@ -1,6 +1,8 @@
 #                                                                                                                                   Caveman-Coding
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/dde4ae5d-6e52-4484-8609-6a4c849e3eea"/>
+</p>
 
- ![image](https://github.com/user-attachments/assets/dde4ae5d-6e52-4484-8609-6a4c849e3eea)
 
 CavemanCoding е отбор от ученици събрали се заедно да направят проект с игри като Sudoku и Wordle.
 Нашата цел е да направим забавни игри за раздвижване на мозъка.
